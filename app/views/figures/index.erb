@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NYC Figures</title>
+  </head>
+  <body>
+
+    <h1>Figures in NYC Landmark History</h1>
+    
+    <ul>
+      <%@figures.all.each do |f|%>
+      <li><a href = "figures/<%=f.id%>"><%=f.name%></a></li>
+      <%end%>
+    </ul>
+    <p><a href = "figures/new">Click here to create a new figure</a></p>
+
+  </body>
+
+</html>
